@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: #020617;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #22c55e;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5f5;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #22c55e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #16a34a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #020617;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to My Landing Page</h2>
+        <p>A simple, clean starting point for your project.</p>
+        <button class="btn" onclick="showAlert()">Get Started</button>
+    </section>
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Welcome! Your page is working.");
+        }
+    </script>
+
+</body>
+</html>
