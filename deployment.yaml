@@ -1,41 +1,42 @@
+
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
-  name: landing-page
+  name: html-demo
 
 spec:
   replicas: 2
 
   selector:
     matchLabels:
-      app: landing-page
+      app: html-demo
 
   template:
     metadata:
       labels:
-        app: landing-page
+        app: html-demo
 
     spec:
       containers:
-        - name: landing-page
-          image: 23mis0488/docker-demo:latest #dockerhub repo name
+        - name: html-demo
+          image: 23mis0488/html-demo:latest
           ports:
             - containerPort: 80
-            
+
+---
+
 apiVersion: v1
 kind: Service
-
 metadata:
-  name: landing-page-service
+  name: html-demo-service
 
 spec:
   type: NodePort
 
   selector:
-    app: landing-page
+    app: html-demo
 
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30011
+      nodePort: 30015
