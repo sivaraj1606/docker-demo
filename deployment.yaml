@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: landing-page
-          image: 23mis0488/docker-demo:latest
+          image: 23mis0488/docker-demo:latest 
           ports:
             - containerPort: 80
             
