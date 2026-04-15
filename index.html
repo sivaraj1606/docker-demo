@@ -88,3 +88,222 @@
 
 </body>
 </html>
+
+----------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full HTML Reference Page</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+    }
+
+    header, footer {
+        background: #020617;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 10px;
+        color: #22c55e;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 40px;
+        border-bottom: 1px solid #1e293b;
+    }
+
+    h1, h2 {
+        color: #22c55e;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background: #22c55e;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid #334155;
+        padding: 10px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Complete Reference</h1>
+    <nav>
+        <a href="#text">Text</a>
+        <a href="#list">Lists</a>
+        <a href="#media">Media</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<!-- TEXT -->
+<section id="text">
+    <h2>Text Elements</h2>
+    <p>This is a <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+    <p><mark>Highlighted text</mark></p>
+    <p><small>Small text</small></p>
+    <p>H<sub>2</sub>O and X<sup>2</sup></p>
+</section>
+
+<!-- LISTS -->
+<section id="list">
+    <h2>Lists</h2>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Step One</li>
+        <li>Step Two</li>
+    </ol>
+
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Structure of webpage</dd>
+    </dl>
+</section>
+
+<!-- MEDIA -->
+<section id="media">
+    <h2>Media</h2>
+
+    <img src="https://via.placeholder.com/300" alt="Sample Image">
+
+    <p>
+        <a href="https://example.com" target="_blank">Visit Example</a>
+    </p>
+
+    <audio controls>
+        <source src="" type="audio/mp3">
+    </audio>
+
+    <video width="300" controls>
+        <source src="" type="video/mp4">
+    </video>
+</section>
+
+<!-- TABLE -->
+<section id="table">
+    <h2>Table</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Siva</td>
+            <td>21</td>
+        </tr>
+    </table>
+</section>
+
+<!-- FORM -->
+<section id="form">
+    <h2>Form Elements</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Password:</label>
+        <input type="password">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <label>Skills:</label>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+
+        <label>Country:</label>
+        <select>
+            <option>India</option>
+            <option>USA</option>
+        </select>
+
+        <label>Message:</label>
+        <textarea></textarea>
+
+        <label>Upload File:</label>
+        <input type="file">
+
+        <label>Date:</label>
+        <input type="date">
+
+        <br><br>
+        <button class="btn">Submit</button>
+    </form>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Reference Page</p>
+</footer>
+
+<script>
+function validateForm() {
+    let name = document.getElementById("name").value;
+
+    if (name.length < 3) {
+        alert("Name must be at least 3 characters");
+        return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true;
+}
+</script>
+
+</body>
+</html>
